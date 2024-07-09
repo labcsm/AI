@@ -14,6 +14,6 @@ find_books_by_author(Author) :-
 
 find_books_by_keyword(Keyword) :-
     book(Title, _),
-    contains_term(Keyword,Title),
+    sub_atom(Title, _, _, _, Keyword),
     write(Title), nl,
     fail.
