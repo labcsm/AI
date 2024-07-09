@@ -4,3 +4,11 @@ factorial(N, Result) :-
     N1 is N - 1,
     factorial(N1, Result1),
     Result is N * Result1.
+
+/* OUTPUT : 
+    ?- factorial(5,Result).
+
+    Result = 120
+
+    yes
+*/

@@ -20,3 +20,23 @@ grandparent(GP, GC) :-
 
 grandchild(GC, GP) :-
     grandparent(GP, GC).
+
+
+/* OUTPUT : 
+    | ?- sibling(a,b).
+
+    no
+    | ?- sibling(c,d).
+
+    true ? 
+
+    yes
+    | ?- grandparent(a,c).
+
+    true ? 
+
+    yes
+    | ?- grandparent(b,c).
+
+no
+*/

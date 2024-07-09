@@ -17,3 +17,20 @@ find_books_by_keyword(Keyword) :-
     sub_atom(Title, _, _, _, Keyword),
     write(Title), nl,
     fail.
+
+
+
+/* OUTPUT : 
+    ?- find_books_by_author('George Orwell').
+    1984
+    Animal Farm
+
+   no
+
+
+     ?- find_books_by_keyword('The').
+    The Great Gatsby
+    The Catcher in the Rye
+
+    no
+*/
